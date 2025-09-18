@@ -2,15 +2,15 @@ package automation.testsuite;
 
 import org.testng.annotations.*;
 import automation.common.commonBase;
-import automation.pageLocator.ProductPage;
+import automation.pageLocator.ChauVoi_ProductPage;
 
-public class SoftByPrice extends commonBase {
-    ProductPage productPage;
+public class ChauVoi_SoftByPrice extends commonBase {
+    ChauVoi_ProductPage productPage;
 
     @BeforeMethod
     public void openBrowser() {
         driver = initChromeDriver("https://bepantoan.vn/danh-muc/chau-voi-rua-chen-bat");
-        productPage = new ProductPage(driver);
+        productPage = new ChauVoi_ProductPage(driver);
     }
 
     @Test
