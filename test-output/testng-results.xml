@@ -1,37 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-19T00:14:36 ICT" name="Default suite" finished-at="2025-09-19T00:14:50 ICT" duration-ms="14108">
+  <suite started-at="2025-09-19T23:01:48 ICT" name="Default suite" finished-at="2025-09-19T23:02:01 ICT" duration-ms="13116">
     <groups>
     </groups>
-    <test started-at="2025-09-19T00:14:36 ICT" name="Default test" finished-at="2025-09-19T00:14:50 ICT" duration-ms="14108">
-      <class name="automation.testsuite.ChauVoi_SoftByCategory">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:automation.testsuite.ChauVoi_SoftByCategory@765d7657]" started-at="2025-09-19T00:14:36 ICT" name="openBrowser" finished-at="2025-09-19T00:14:42 ICT" duration-ms="5794" status="PASS">
+    <test started-at="2025-09-19T23:01:48 ICT" name="Default test" finished-at="2025-09-19T23:02:01 ICT" duration-ms="13116">
+      <class name="automation.testsuite.ChauVoi_SoftByBrand">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:automation.testsuite.ChauVoi_SoftByBrand@765d7657]" started-at="2025-09-19T23:01:48 ICT" name="openBrowser" finished-at="2025-09-19T23:01:56 ICT" duration-ms="7742" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method signature="testCategoryChau()[pri:0, instance:automation.testsuite.ChauVoi_SoftByCategory@765d7657]" started-at="2025-09-19T00:14:42 ICT" name="testCategoryChau" finished-at="2025-09-19T00:14:43 ICT" duration-ms="1002" status="PASS">
+        <test-method signature="locTheoHangKainer()[pri:0, instance:automation.testsuite.ChauVoi_SoftByBrand@765d7657]" started-at="2025-09-19T23:01:56 ICT" name="locTheoHangKainer" finished-at="2025-09-19T23:02:01 ICT" duration-ms="5171" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCategoryChau -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:automation.testsuite.ChauVoi_SoftByCategory@765d7657]" started-at="2025-09-19T00:14:43 ICT" name="closeBrowser" finished-at="2025-09-19T00:14:43 ICT" duration-ms="224" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:automation.testsuite.ChauVoi_SoftByCategory@765d7657]" started-at="2025-09-19T00:14:43 ICT" name="openBrowser" finished-at="2025-09-19T00:14:49 ICT" duration-ms="5924" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method signature="testCategoryVoi()[pri:0, instance:automation.testsuite.ChauVoi_SoftByCategory@765d7657]" started-at="2025-09-19T00:14:49 ICT" name="testCategoryVoi" finished-at="2025-09-19T00:14:50 ICT" duration-ms="924" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCategoryVoi -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:automation.testsuite.ChauVoi_SoftByCategory@765d7657]" started-at="2025-09-19T00:14:50 ICT" name="closeBrowser" finished-at="2025-09-19T00:14:50 ICT" duration-ms="190" status="PASS">
+        </test-method> <!-- locTheoHangKainer -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:automation.testsuite.ChauVoi_SoftByBrand@765d7657]" started-at="2025-09-19T23:02:01 ICT" name="closeBrowser" finished-at="2025-09-19T23:02:01 ICT" duration-ms="161" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- automation.testsuite.ChauVoi_SoftByCategory -->
+      </class> <!-- automation.testsuite.ChauVoi_SoftByBrand -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

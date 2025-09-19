@@ -1,6 +1,7 @@
 package automation.pageLocator;
 
 import java.time.Duration;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -211,5 +212,27 @@ public class ChauVoi_ProductPage extends commonBase {
 	        return elements.stream()
 	                       .map(e -> e.getText().toLowerCase().trim()) 
 	                       .collect(Collectors.toList());
+	    }
+
+
+	    // ✅ Click đúng vào logo của hãng Kainer
+	    public void clickBrandKainer() {
+	        WebElement kainer = driver.findElement(
+	                By.xpath("//a[contains(@href,'/chau-voi-rua-chen-bat/kainer')]")
+	        );
+	        kainer.click();
+	    }
+
+	    // ✅ Lấy danh sách logo brand (alt trong thẻ <img>)
+	    public List<String> getProductBrands() {
+	        List<WebElement> brandLogos = driver.findElements(
+	                By.xpath("//a[contains(@class,'product-card')]//img[@alt]")
+	        );
+
+	        List<String> brands = new ArrayList<>();
+	        for (WebElement logo : brandLogos) {
+	            brands.add(logo.getAttribute("alt").toLowerCase());
+	        }
+	        return brands;
 	    }
 }
