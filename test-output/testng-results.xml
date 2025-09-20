@@ -2,24 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-19T23:01:48 ICT" name="Default suite" finished-at="2025-09-19T23:02:01 ICT" duration-ms="13116">
+  <suite started-at="2025-09-20T21:28:45 ICT" name="Default suite" finished-at="2025-09-20T21:28:53 ICT" duration-ms="8627">
     <groups>
     </groups>
-    <test started-at="2025-09-19T23:01:48 ICT" name="Default test" finished-at="2025-09-19T23:02:01 ICT" duration-ms="13116">
-      <class name="automation.testsuite.ChauVoi_SoftByBrand">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:automation.testsuite.ChauVoi_SoftByBrand@765d7657]" started-at="2025-09-19T23:01:48 ICT" name="openBrowser" finished-at="2025-09-19T23:01:56 ICT" duration-ms="7742" status="PASS">
+    <test started-at="2025-09-20T21:28:45 ICT" name="Default test" finished-at="2025-09-20T21:28:53 ICT" duration-ms="8627">
+      <class name="automation.testsuite.ChauVoi_CheckOut">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:automation.testsuite.ChauVoi_CheckOut@515c6049]" started-at="2025-09-20T21:28:45 ICT" name="openBrowser" finished-at="2025-09-20T21:28:50 ICT" duration-ms="5547" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method signature="locTheoHangKainer()[pri:0, instance:automation.testsuite.ChauVoi_SoftByBrand@765d7657]" started-at="2025-09-19T23:01:56 ICT" name="locTheoHangKainer" finished-at="2025-09-19T23:02:01 ICT" duration-ms="5171" status="PASS">
+        <test-method signature="testCheckoutFlow()[pri:0, instance:automation.testsuite.ChauVoi_CheckOut@515c6049]" started-at="2025-09-20T21:28:50 ICT" name="testCheckoutFlow" finished-at="2025-09-20T21:28:53 ICT" duration-ms="3029" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- locTheoHangKainer -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:automation.testsuite.ChauVoi_SoftByBrand@765d7657]" started-at="2025-09-19T23:02:01 ICT" name="closeBrowser" finished-at="2025-09-19T23:02:01 ICT" duration-ms="161" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- automation.testsuite.ChauVoi_SoftByBrand -->
+        </test-method> <!-- testCheckoutFlow -->
+      </class> <!-- automation.testsuite.ChauVoi_CheckOut -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
