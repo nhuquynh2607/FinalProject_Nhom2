@@ -9,6 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
@@ -18,8 +19,10 @@ public class CheckoutTest_LoNuongDaNang extends commonBase {
     CheckoutLocator_LoNuongDaNang checkout;
 
     @BeforeMethod
-    public void openBrowser() {
-        driver = initChromeDriver(CT_PageURL.BEPANTOAN_URL);
+    @Parameters("browser")
+    public void openBrowser(String browser)
+    {
+        driver = setupDriver(browser);
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         driver.get("https://bepantoan.vn/lo-nuong-eurosun-eov65me");
         checkout = new CheckoutLocator_LoNuongDaNang(driver);

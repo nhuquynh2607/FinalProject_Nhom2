@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
@@ -17,8 +18,11 @@ public class FilterTest_LoNuongDaNang extends commonBase {
     FilterLocator_LoNuongDaNang filter;
 
     @BeforeMethod
-    public void openBrowser() {
-        driver = initChromeDriver(CT_PageURL.BEPANTOAN_URL);
+    @Parameters("browser")
+    public void openBrowser(String browser)
+    {
+        driver = setupDriver(browser);
+        driver.get(CT_PageURL.BEPANTOAN_URL);
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         driver.get("https://bepantoan.vn/danh-muc/lo-nuong-da-nang");
         filter = new FilterLocator_LoNuongDaNang(driver);
