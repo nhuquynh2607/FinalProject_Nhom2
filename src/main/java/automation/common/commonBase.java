@@ -160,4 +160,9 @@ public class commonBase {
         }
         return driver;
     }
+    public void quitDriver(WebDriver driver) {
+        if (driver != null) {
+            driver.quit();
+        }
+    }
 }
